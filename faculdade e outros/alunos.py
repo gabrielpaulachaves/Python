@@ -1,0 +1,28 @@
+class Aluno:
+def __init__(self, nome, nota1, nota2):
+self.nome = nome
+self.nota1 = nota1
+self.nota2 = nota2
+def calcular_media(self):
+return (self.nota1 + self.nota2) / 2
+def verificar_situacao(self):
+media = self.calcular_media()
+if media >= 7:
+return "aprovado"
+elif media >= 4:
+return "exame final"
+else:
+return "reprovado"
+def exibir_resultado(self):
+print(f"aluno: {self.nome}")
+print(f"Média: {self.calcular_media():.1f}")
+print(f"Siuação {self.verificar_situacao()}")
+if __name__ == "__main__":
+quantidade = int(input("Quantos alunos deseja cadastrar? "))
+for i in range(quantidade):
+print(f"\nAluno {i + 1}")
+nome = input("nome: ")
+nota1 = float(input("Nota 1: "))
+nota2 = float(input("Nota 2: "))
+aluno = Aluno(nome, nota1, nota2)
+aluno.exibir_resultado()

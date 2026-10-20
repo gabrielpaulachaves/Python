@@ -10,7 +10,6 @@ products = [{'frango':30},{'peixe':177},{'cacho de banana':12},{'danone':9}]
 
 print(filtrar(products, 8, 177))
 
-    
 
 
 
