@@ -1,7 +1,7 @@
-class Aluno:
-    def __init__(self, nome, nota1, nota2):
-        self.nome = nome
-        self.nota1 = nota1
+class Aluno: #class é como uma planta (molde) de uma casa, ela cria objetos (que são as casas) a partir dela
+    def __init__(self, nome, nota1, nota2): #self é tipo o this no javascript, significa "esse objeto aqui". 
+        self.nome = nome  #o self aqui significa
+        self.nota1 = nota1 
         self.nota2 = nota2
 
     def calcular_media(self):
