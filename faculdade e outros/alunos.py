@@ -21,7 +21,7 @@ class Aluno: #class é como uma planta (molde) de uma casa, ela cria objetos (qu
         print(f"Média: {self.calcular_media():.1f}")
         print(f"Situação: {self.verificar_situacao()}")
 
-if __name__ == "__main__":
+if __name__ == "__main__": #significa que o código abaixo só vai rodar se o arquivo for executado diretamente, e não importado
     quantidade = int(input("Quantos alunos deseja cadastrar? "))
 for i in range(quantidade):
     print(f"\nAluno {i + 1}")
@@ -30,5 +30,6 @@ for i in range(quantidade):
     nota2 = float(input("Nota 2: "))
     aluno = Aluno(nome, nota1, nota2)    
     aluno.exibir_resultado()
+
 
    
