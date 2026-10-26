@@ -1,3 +1,4 @@
+print(__name__)
 class Aluno: #class é como uma planta (molde) de uma casa, ela cria objetos (que são as casas) a partir dela
     def __init__(self, nome, nota1, nota2): #self é tipo o this no javascript, significa "esse objeto aqui". 
         self.nome = nome  #o self aqui significa que cada objeto terá uma propriedade chamada "nome". self é tipo uma gaveta do objeto. Pega o valor que ta de passagem e guarda no objeto. sem o self o dado sumiria
