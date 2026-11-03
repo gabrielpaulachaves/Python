@@ -37,7 +37,8 @@ class Estoque:
             return
         produto = Produto(codigo, nome, preco, quantidade) #cada "produto" vai receber um objeto
             #basicamente passamos todas as variaveis acima para dentro dos parametros da class, e guardamos essa geração de objeto dentro da variavel produto.
-            #duvida: como que cada produto vai receber um objeto? por tras da logica, nao criamos apenas uma vez a variavel produto? R: essa variavel produto muda de valor toda vez que chamamos essa funcao, para nao perdermos os valores anteriores, a gente guarda no objeto self.produtos
+
+            #duvida: como que cada produto vai receber um objeto? por tras da logica, nao criamos apenas uma vez a variavel produto? R: essa variavel produto muda de valor toda vez que chamamos essa funcao
             #logo depois de guardar o objeto criado pela class, guardamos essa variavel no self.produtos[codigo], pois a variavel "produto" mudará de valor quando cadastrarmos um novo produto. É tipo uma variavel de transferencia rapida, só guarda por um curto periodo e ja passa pro dicionario.
 
             #"entao eu posso criar varias vezes um produto com o mesmo codigo, já que o produto será resetado". Não, pois fazemos uma verificação lá encima com uma condição que verifica se o codigo já existe
