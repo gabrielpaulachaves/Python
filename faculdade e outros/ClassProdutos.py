@@ -73,7 +73,7 @@ class Estoque:
             print(f"Total: {total:.2f}")
             valorgeral += total
         print(f"Valor geral do estoque: {valorgeral:.2f}")
-estoque = Estoque()  #vai servir para chamarmos os metodos no menu. Ele guarda dados e regras
+estoque = Estoque()  #vai servir para chamarmos os metodos no menu. Ele guarda dados e regras. A variavel estoque guarda o objeto criado pela class Estoque()
  #só precisamos de apenas um estoque, dentro do estoque guardaremos outros objetos.
 while True:  #enquanto for  verdade, só vai parar quando tiver um break
     print("<====MENU====>")  
